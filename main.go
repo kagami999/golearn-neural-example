@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	layers := []int{4, 16, 3}
+	layers := []int{4, 8, 3}
 	network := neural.NewMultiLayerNet(layers)
 	inst, e := base.ParseCSVToInstances("iris_headers.csv",
 		true)
